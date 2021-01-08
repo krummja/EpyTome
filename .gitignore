@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.manifest
+*.spec
+.vscode
+.vscode/
+.idea/
