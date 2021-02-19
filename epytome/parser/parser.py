@@ -1,8 +1,7 @@
 from __future__ import annotations
 from typing import Optional
 
-from parser.lexer import Lexer
-from parser.token import Token, TokenType
+from .lexer import Lexer, Token, TokenType
 
 
 class Parser:

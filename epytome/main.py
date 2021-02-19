@@ -1,14 +1,12 @@
-"""
-EpyTome is a plain text parser for generating LaTeX and BibTeX documents,
-mainly for typesetting academic publications.
-"""
-import click
+from __future__ import annotations
 
-
-@click.group()
-def cli():
-    pass
-
+from epytome.gui import Application
+from epytome.document import unpack_docx
 
 if __name__ == '__main__':
-    cli()
+
+    result = unpack_docx('/home/krummja/Workspace/Python/EpyTome/epytome/assets/test_doc.docx')
+    print(result)
+
+    app = Application()
+    app.start()
